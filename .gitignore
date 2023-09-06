@@ -1,0 +1,3 @@
+# don't upload cache file
+__pycache__/
+.vscode/
