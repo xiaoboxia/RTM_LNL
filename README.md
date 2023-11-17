@@ -12,7 +12,7 @@ Xiaobo Xia*, Pengqian Lu*, Chen Gong, Bo Han, Jun Yu, Jun Yu, and Tongliang Liu
 
 To run the experiments for rtcatoni on mnist with 30% symmetric label noise, run 
 
-`python main.py --loss rtcatoni --noise_type symmetric --noise_rate 30`
+`python main.py --loss rtcatoni --noise_type symmetric --noise_rate 30 --dataset mnist`
 
 result will be saved in `./results/results.csv`
 
@@ -22,3 +22,4 @@ The noise type options is symmetric, pairflip, ILN.
 
 The noise rate options is 30, 50 but 45 for pairflip.
 
+**Rurrently, we have release the code on four datasets, including mnsit, cifar10, svhn and news.**
