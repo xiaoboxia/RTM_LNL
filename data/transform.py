@@ -190,6 +190,45 @@ def transform_train(dataset_name):
                 # transforms.Normalize((0.1307,), (0.3081,)),
             ])
 
+    elif dataset_name == 'cifar10':
+        if args.use_aug:
+            transform = transforms.Compose([
+                transforms.RandomCrop(32, padding=4),
+                transforms.RandomHorizontalFlip(p=0.5),
+                transforms.ToTensor(),
+                transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))
+            ])
+        else:
+            transform = transforms.Compose([
+                transforms.ToTensor(),
+                transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))
+            ])
+    elif dataset_name == 'svhn':
+        if args.use_aug:
+            transform = transforms.Compose([
+                transforms.RandomCrop(32, padding=4),
+                transforms.RandomHorizontalFlip(p=0.5),
+                transforms.ToTensor(),
+                transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
+            ])
+        else:
+            transform = transforms.Compose([
+                transforms.ToTensor(),
+                transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
+            ])
+    elif dataset_name == 'news':
+        transform = transforms.Compose([
+            transforms.ToTensor(),
+        ])
+    elif dataset_name == 'cifar100':
+        transform = transforms.Compose([
+            transforms.RandomCrop(32, padding=4),
+            transforms.RandomHorizontalFlip(),
+            transforms.ToTensor(),
+            transforms.Normalize((0.5070751592371323, 0.48654887331495095, 0.4409178433670343),
+                                 (0.2673342858792409, 0.25643846291708816, 0.2761504713256834)),
+        ])
+
     return transform
 
 
@@ -204,6 +243,28 @@ def transform_test(dataset_name):
                 transforms.ToTensor(),
                 transforms.Normalize((0.1307,), (0.3081,)),
             ])
+
+    elif dataset_name == 'cifar10':
+        transform = transforms.Compose([
+            transforms.ToTensor(),
+            transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))
+        ])
+
+    elif dataset_name == 'svhn':
+        transform = transforms.Compose([
+            transforms.ToTensor(),
+            transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
+        ])
+    elif dataset_name == 'news':
+        transform = transforms.Compose([
+            transforms.ToTensor()
+        ])
+    elif dataset_name == 'cifar100':
+        transform = transforms.Compose([
+            transforms.ToTensor(),
+            transforms.Normalize((0.5087964127604166, 0.48739301317401956, 0.44194221124387256),
+                                 (0.2682515741720802, 0.2573637364478125, 0.2770957707973041)),
+        ])
 
     return transform
 

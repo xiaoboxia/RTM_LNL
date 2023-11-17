@@ -1,0 +1,166 @@
+{
+  "configurations": [
+    {
+      "dataset": "svhn",
+      "loss": "rtcatoni",
+      "noise_rate": 30,
+      "noise_type": "ILN",
+      "settings": {
+        "pretrain": 5
+      }
+    },
+    {
+      "dataset": "svhn",
+      "loss": "rtlogsum",
+      "noise_rate": 30,
+      "noise_type": "ILN",
+      "settings": {
+        "pretrain": 5
+      }
+    },
+    {
+      "dataset": "svhn",
+      "loss": "rtwelschp",
+      "noise_rate": 30,
+      "noise_type": "ILN",
+      "settings": {
+        "pretrain": 15
+      }
+    },
+    {
+      "dataset": "svhn",
+      "loss": "rtcatoni",
+      "noise_rate": 50,
+      "noise_type": "ILN",
+      "settings": {
+        "pretrain": 0
+      }
+    },
+    {
+      "dataset": "svhn",
+      "loss": "rtlogsum",
+      "noise_rate": 50,
+      "noise_type": "ILN",
+      "settings": {
+        "pretrain": 15
+      }
+    },
+    {
+      "dataset": "svhn",
+      "loss": "rtwelschp",
+      "noise_rate": 50,
+      "noise_type": "ILN",
+      "settings": {
+        "pretrain": 40
+      }
+    },
+    {
+      "dataset": "svhn",
+      "loss": "rtcatoni",
+      "noise_rate": 30,
+      "noise_type": "pairflip",
+      "settings": {
+        "pretrain": 10
+      }
+    },
+    {
+      "dataset": "svhn",
+      "loss": "rtlogsum",
+      "noise_rate": 30,
+      "noise_type": "pairflip",
+      "settings": {
+        "pretrain": 10
+      }
+    },
+    {
+      "dataset": "svhn",
+      "loss": "rtwelschp",
+      "noise_rate": 30,
+      "noise_type": "pairflip",
+      "settings": {
+        "pretrain": 15
+      }
+    },
+    {
+      "dataset": "svhn",
+      "loss": "rtcatoni",
+      "noise_rate": 45,
+      "noise_type": "pairflip",
+      "settings": {
+        "pretrain": 40
+      }
+    },
+    {
+      "dataset": "svhn",
+      "loss": "rtlogsum",
+      "noise_rate": 45,
+      "noise_type": "pairflip",
+      "settings": {
+        "pretrain": 15
+      }
+    },
+    {
+      "dataset": "svhn",
+      "loss": "rtwelschp",
+      "noise_rate": 45,
+      "noise_type": "pairflip",
+      "settings": {
+        "pretrain": 40
+      }
+    },
+    {
+      "dataset": "svhn",
+      "loss": "rtcatoni",
+      "noise_rate": 30,
+      "noise_type": "symmetric",
+      "settings": {
+        "pretrain": 10
+      }
+    },
+    {
+      "dataset": "svhn",
+      "loss": "rtlogsum",
+      "noise_rate": 30,
+      "noise_type": "symmetric",
+      "settings": {
+        "pretrain": 20
+      }
+    },
+    {
+      "dataset": "svhn",
+      "loss": "rtwelschp",
+      "noise_rate": 30,
+      "noise_type": "symmetric",
+      "settings": {
+        "pretrain": 30
+      }
+    },
+    {
+      "dataset": "svhn",
+      "loss": "rtcatoni",
+      "noise_rate": 50,
+      "noise_type": "symmetric",
+      "settings": {
+        "pretrain": 30
+      }
+    },
+    {
+      "dataset": "svhn",
+      "loss": "rtlogsum",
+      "noise_rate": 50,
+      "noise_type": "symmetric",
+      "settings": {
+        "pretrain": 5
+      }
+    },
+    {
+      "dataset": "svhn",
+      "loss": "rtwelschp",
+      "noise_rate": 50,
+      "noise_type": "symmetric",
+      "settings": {
+        "pretrain": 40
+      }
+    }
+  ]
+}

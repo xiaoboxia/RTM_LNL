@@ -55,7 +55,7 @@ for repeat in range(args.repeat):
     if args.pretrain > 0:
         ce = nn.CrossEntropyLoss()
         path = f'./model/{args.dataset}/pre_{args.lr}_{args.wd}_{args.a}{args.b}_{args.pretrain}_{repeat}.pth.tar'
-        optimizer = torch.optim.SGD(net.parameters(), momentum=0.9, lr=args.lr, weight_decay=args.wd)
+        optimizer = torch.optim.SGD(net.parameters(), momentum=0.9, lr=args.pretrain_lr, weight_decay=args.pretrain_wd)
         scheduler = MultiStepLR(optimizer, milestones=[40, 80], gamma=0.1)
         from tqdm import trange
         for epoch in trange(args.pretrain):
@@ -149,5 +149,5 @@ time2 = time.time()
 print('time=', time2 - time1)
 
 with open(f'./results/{args.save_file}.csv','a') as f:
-    f.write(f'{args.dataset},{args.noise_type},{args.noise_rate},{args.loss},{meanstd},{args.pretrain},{args.relax},{args.ablation_fix},{result.mean()*100:.2f},{args.two_cop},{args.lr},{args.wd},{args.a},{args.b},{args.threshold_offset},{args.use_aug}\n')
+    f.write(f'{args.dataset},{args.noise_type},{args.noise_rate},{args.loss},{meanstd},{args.pretrain},{args.relax},{args.ablation_fix},{result.mean()*100:.2f},{args.two_cop},{args.lr},{args.wd},{args.a},{args.b},{args.threshold_offset},{args.use_aug},{args.pretrain_lr},{args.pretrain_wd}\n')
 

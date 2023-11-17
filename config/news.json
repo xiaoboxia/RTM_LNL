@@ -1,0 +1,184 @@
+{
+  "configurations": [
+    {
+      "dataset": "news",
+      "loss": "rtcatoni",
+      "noise_rate": 30,
+      "noise_type": "ILN",
+      "settings": {
+        "pretrain": 5,
+        "relax": 6
+      }
+    },
+    {
+      "dataset": "news",
+      "loss": "rtlogsum",
+      "noise_rate": 30,
+      "noise_type": "ILN",
+      "settings": {
+        "pretrain": 5,
+        "relax": 6
+      }
+    },
+    {
+      "dataset": "news",
+      "loss": "rtwelschp",
+      "noise_rate": 30,
+      "noise_type": "ILN",
+      "settings": {
+        "pretrain": 10,
+        "relax": 4
+      }
+    },
+    {
+      "dataset": "news",
+      "loss": "rtcatoni",
+      "noise_rate": 50,
+      "noise_type": "ILN",
+      "settings": {
+        "pretrain": 0,
+        "relax": 7
+      }
+    },
+    {
+      "dataset": "news",
+      "loss": "rtlogsum",
+      "noise_rate": 50,
+      "noise_type": "ILN",
+      "settings": {
+        "pretrain": 0,
+        "relax": 6
+      }
+    },
+    {
+      "dataset": "news",
+      "loss": "rtwelschp",
+      "noise_rate": 50,
+      "noise_type": "ILN",
+      "settings": {
+        "pretrain": 10,
+        "relax": 5
+      }
+    },
+    {
+      "dataset": "news",
+      "loss": "rtcatoni",
+      "noise_rate": 30,
+      "noise_type": "pairflip",
+      "settings": {
+        "pretrain": 10,
+        "relax": 7
+      }
+    },
+    {
+      "dataset": "news",
+      "loss": "rtlogsum",
+      "noise_rate": 30,
+      "noise_type": "pairflip",
+      "settings": {
+        "pretrain": 15,
+        "relax": 6
+      }
+    },
+    {
+      "dataset": "news",
+      "loss": "rtwelschp",
+      "noise_rate": 30,
+      "noise_type": "pairflip",
+      "settings": {
+        "pretrain": 15,
+        "relax": 6
+      }
+    },
+    {
+      "dataset": "news",
+      "loss": "rtcatoni",
+      "noise_rate": 45,
+      "noise_type": "pairflip",
+      "settings": {
+        "pretrain": 15,
+        "relax": 7
+      }
+    },
+    {
+      "dataset": "news",
+      "loss": "rtlogsum",
+      "noise_rate": 45,
+      "noise_type": "pairflip",
+      "settings": {
+        "pretrain": 15,
+        "relax": 6
+      }
+    },
+    {
+      "dataset": "news",
+      "loss": "rtwelschp",
+      "noise_rate": 45,
+      "noise_type": "pairflip",
+      "settings": {
+        "pretrain": 15,
+        "relax": 7
+      }
+    },
+    {
+      "dataset": "news",
+      "loss": "rtcatoni",
+      "noise_rate": 30,
+      "noise_type": "symmetric",
+      "settings": {
+        "pretrain": 5,
+        "relax": 6
+      }
+    },
+    {
+      "dataset": "news",
+      "loss": "rtlogsum",
+      "noise_rate": 30,
+      "noise_type": "symmetric",
+      "settings": {
+        "pretrain": 15,
+        "relax": 6
+      }
+    },
+    {
+      "dataset": "news",
+      "loss": "rtwelschp",
+      "noise_rate": 30,
+      "noise_type": "symmetric",
+      "settings": {
+        "pretrain": 15,
+        "relax": 4
+      }
+    },
+    {
+      "dataset": "news",
+      "loss": "rtcatoni",
+      "noise_rate": 50,
+      "noise_type": "symmetric",
+      "settings": {
+        "pretrain": 0,
+        "relax": 7
+      }
+    },
+    {
+      "dataset": "news",
+      "loss": "rtlogsum",
+      "noise_rate": 50,
+      "noise_type": "symmetric",
+      "settings": {
+        "pretrain": 0,
+        "relax": 5
+      }
+    },
+    {
+      "dataset": "news",
+      "loss": "rtwelschp",
+      "noise_rate": 50,
+      "noise_type": "symmetric",
+      "settings": {
+        "pretrain": 10,
+        "relax": 8
+      }
+    }
+  ]
+}

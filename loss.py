@@ -25,7 +25,7 @@ class PManager:
 
         ce = ce.detach().sort().values
         best_diff = np.inf
-        for i in np.arange(0.8, args.range+0.1, 0.1):
+        for i in np.arange(0.8, 1.3, 0.1):
             lp_loss = torch.log(1 + ce / i)
             diff = (target - lp_loss).abs().sum()
             if best_diff > diff:
@@ -42,7 +42,7 @@ class PManager:
             return args.ablation_fix
         ce = ce.detach().sort().values
         best_diff = np.inf
-        for i in np.arange(0.8, args.range+0.1, 0.1):
+        for i in np.arange(0.8, 1.3, 0.1):
             wp_loss = 1 - np.e **(- ce / i)
             diff = (target - wp_loss).abs().sum()
             if best_diff > diff:
@@ -96,10 +96,7 @@ def tcatoni(yhat, y, epoch):
         memorize_rate += args.threshold_offset / 100
         c = ce_loss.detach().cpu().numpy()
         percentile = min(max(memorize_rate * 100, 0), 100)
-        if percentile == 0 or percentile == 100:
-            print('WTF??????????????')
         new_cop = np.percentile(c, percentile)
-        # print(f"epsilon difference {(ce_loss <= cop).float().detach().cpu().numpy().mean() - memorize_rate}")
         selected_ce_loss = ce_loss[(ce_loss <= new_cop)]
 
     return torch.log(1 + selected_ce_loss + selected_ce_loss**2).mean()
@@ -133,10 +130,7 @@ def tlogsum(yhat, y, epoch):
         memorize_rate += args.threshold_offset / 100
         c = ce_loss.detach().cpu().numpy()
         percentile = min(max(memorize_rate * 100, 0), 100)
-        if percentile == 0 or percentile == 100:
-            print('WTF??????????????')
         new_cop = np.percentile(c, percentile)
-        # print(f"epsilon difference {(ce_loss <= cop).float().detach().cpu().numpy().mean() - memorize_rate}")
         cop = new_cop
 
     return torch.log(1 + ce_loss[ce_loss <= cop] / epsilon).mean()
@@ -169,10 +163,7 @@ def twelschp(yhat, y, epoch):
         memorize_rate += args.threshold_offset / 100
         c = ce_loss.detach().cpu().numpy()
         percentile = min(max(memorize_rate * 100, 0), 100)
-        if percentile == 0 or percentile == 100:
-            print('WTF??????????????')
         new_cop = np.percentile(c, percentile)
-        # print(f"epsilon difference {(ce_loss <= cop).float().detach().cpu().numpy().mean() - memorize_rate}")
         cop = new_cop
 
 
