@@ -22,4 +22,4 @@ The noise type options is symmetric, pairflip, ILN.
 
 The noise rate options is 30, 50 but 45 for pairflip.
 
-**Rurrently, we have release the code on four datasets, including mnsit, cifar10, svhn and news.**
+**Rurrently, we have release the code on four datasets, including mnsit, cifar10, cifar100, svhn and news.**
