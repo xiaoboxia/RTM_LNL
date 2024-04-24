@@ -2,7 +2,7 @@
 Regularly Truncated M-estimators for Learning with Noisy Labels (PyTorch implementation).
 
 This is the code for the paper:
-[Regularly Truncated M-estimators for Learning with Noisy Labels]()      
+[Regularly Truncated M-estimators for Learning with Noisy Labels](https://arxiv.org/pdf/2309.00894.pdf)      
 Xiaobo Xia*, Pengqian Lu*, Chen Gong, Bo Han, Jun Yu, Jun Yu, and Tongliang Liu
 
 ## Dependencies
