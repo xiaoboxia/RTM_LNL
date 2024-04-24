@@ -1,0 +1,182 @@
+[
+    {
+        "dataset": "cifar100",
+        "noise_type": "ILN",
+        "noise_rate": 30,
+        "loss": "rtcatoni",
+        "settings": {
+            "pretrain": 30,
+            "relax": 2
+        }
+    },
+    {
+        "dataset": "cifar100",
+        "noise_type": "ILN",
+        "noise_rate": 30,
+        "loss": "rtlogsum",
+        "settings": {
+            "pretrain": 20,
+            "relax": 3
+        }
+    },
+    {
+        "dataset": "cifar100",
+        "noise_type": "ILN",
+        "noise_rate": 30,
+        "loss": "rtwelschp",
+        "settings": {
+            "pretrain": 40,
+            "relax": 3
+        }
+    },
+    {
+        "dataset": "cifar100",
+        "noise_type": "ILN",
+        "noise_rate": 50,
+        "loss": "rtcatoni",
+        "settings": {
+            "pretrain": 40,
+            "relax": 2
+        }
+    },
+    {
+        "dataset": "cifar100",
+        "noise_type": "ILN",
+        "noise_rate": 50,
+        "loss": "rtlogsum",
+        "settings": {
+            "pretrain": 20,
+            "relax": 3
+        }
+    },
+    {
+        "dataset": "cifar100",
+        "noise_type": "ILN",
+        "noise_rate": 50,
+        "loss": "rtwelschp",
+        "settings": {
+            "pretrain": 20,
+            "relax": 4
+        }
+    },
+    {
+        "dataset": "cifar100",
+        "noise_type": "pairflip",
+        "noise_rate": 30,
+        "loss": "rtcatoni",
+        "settings": {
+            "pretrain": 30,
+            "relax": 2
+        }
+    },
+    {
+        "dataset": "cifar100",
+        "noise_type": "pairflip",
+        "noise_rate": 30,
+        "loss": "rtlogsum",
+        "settings": {
+            "pretrain": 40,
+            "relax": 3
+        }
+    },
+    {
+        "dataset": "cifar100",
+        "noise_type": "pairflip",
+        "noise_rate": 30,
+        "loss": "rtwelschp",
+        "settings": {
+            "pretrain": 40,
+            "relax": 3
+        }
+    },
+    {
+        "dataset": "cifar100",
+        "noise_type": "pairflip",
+        "noise_rate": 45,
+        "loss": "rtcatoni",
+        "settings": {
+            "pretrain": 20,
+            "relax": 2
+        }
+    },
+    {
+        "dataset": "cifar100",
+        "noise_type": "pairflip",
+        "noise_rate": 45,
+        "loss": "rtlogsum",
+        "settings": {
+            "pretrain": 20,
+            "relax": 3
+        }
+    },
+    {
+        "dataset": "cifar100",
+        "noise_type": "pairflip",
+        "noise_rate": 45,
+        "loss": "rtwelschp",
+        "settings": {
+            "pretrain": 40,
+            "relax": 3
+        }
+    },
+    {
+        "dataset": "cifar100",
+        "noise_type": "symmetric",
+        "noise_rate": 30,
+        "loss": "rtcatoni",
+        "settings": {
+            "pretrain": 10,
+            "relax": 2
+        }
+    },
+    {
+        "dataset": "cifar100",
+        "noise_type": "symmetric",
+        "noise_rate": 30,
+        "loss": "rtlogsum",
+        "settings": {
+            "pretrain": 10,
+            "relax": 2
+        }
+    },
+    {
+        "dataset": "cifar100",
+        "noise_type": "symmetric",
+        "noise_rate": 30,
+        "loss": "rtwelschp",
+        "settings": {
+            "pretrain": 50,
+            "relax": 2
+        }
+    },
+    {
+        "dataset": "cifar100",
+        "noise_type": "symmetric",
+        "noise_rate": 50,
+        "loss": "rtcatoni",
+        "settings": {
+            "pretrain": 10,
+            "relax": 2
+        }
+    },
+    {
+        "dataset": "cifar100",
+        "noise_type": "symmetric",
+        "noise_rate": 50,
+        "loss": "rtlogsum",
+        "settings": {
+            "pretrain": 15,
+            "relax": 2
+        }
+    },
+    {
+        "dataset": "cifar100",
+        "noise_type": "symmetric",
+        "noise_rate": 50,
+        "loss": "rtwelschp",
+        "settings": {
+            "pretrain": 50,
+            "relax": 2
+        }
+    }
+]

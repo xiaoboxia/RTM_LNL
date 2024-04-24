@@ -74,18 +74,23 @@ elif args.dataset == 'svhn':
 elif args.dataset == 'news':
     args.model = 'newsnet'
     args.data_path = "./database/news/"
+elif args.dataset == 'cifar100':
+    args.model = 'resnet50'
+    args.data_path = "./database/cifar100"
 
 
 import json
 
 file_path = f"./config/{args.dataset}.json"
 
-with open(file_path, 'r') as f:
-    config = json.load(f)
-    for item in config['configurations']:
-        if item['loss'] == args.loss and item['noise_rate'] == args.noise_rate and item['noise_type'] == args.noise_type:
-            if 'pretrain' in item['settings']:
-                args.pretrain = item['settings']['pretrain']
-            if 'relax' in item['settings']:
-                args.relax = item['settings']['relax']
-            break
+import os 
+if os.path.exists(file_path):
+    with open(file_path, 'r') as f:
+        config = json.load(f)
+        for item in config['configurations']:
+            if item['loss'] == args.loss and item['noise_rate'] == args.noise_rate and item['noise_type'] == args.noise_type:
+                if 'pretrain' in item['settings']:
+                    args.pretrain = item['settings']['pretrain']
+                if 'relax' in item['settings']:
+                    args.relax = item['settings']['relax']
+                break

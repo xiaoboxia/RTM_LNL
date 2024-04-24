@@ -1,3 +1,9 @@
 # don't upload cache file
 __pycache__/
 .vscode/
+/log/
+/database/
+generate_bash.ipynb
+.ipynb
+*.sh
+/results/
