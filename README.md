@@ -7,8 +7,11 @@ Xiaobo Xia*, Pengqian Lu*, Chen Gong, Bo Han, Jun Yu, Jun Yu, and Tongliang Liu
 
 ## Dependencies
 torch==1.10.0
+
 tqdm==4.64.1
+
 numpy==1.23.0
+
 torchvision==0.11.0
 
 ## Experiments
